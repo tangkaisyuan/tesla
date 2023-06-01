@@ -1,0 +1,67 @@
+body {
+  /*backround-color: bisque;*/
+  background-image: url("../img/99.jpg");
+  background-repeat: repeat;
+  background-size: 100% 100%;
+}
+h1 {
+  border: 20px solid rgb(66, 103, 172);
+  color: rgb(234, 241, 241);
+  font-size: 300%;
+  text-align: center;
+  /*background-color:coral;*/
+}
+p {
+  text-align: center;
+}
+img {
+  width: 500px;
+  height: 300px;
+  float: left;
+}
+/* Style the header */
+header {
+  background-color: rgb(58, 58, 58);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(231, 223, 223);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(245, 235, 235);
+  /* padding: 20px; */
+}
+
+/* Style the list inside the menu */
+/* nav ul { */
+/* list-style-type: none; */
+/* padding: 0; */
+/* } */
+
+article {
+  float: left;
+  /* padding: 20px; */
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(230, 225, 225);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
